@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+    <title>MajiNotes</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        .container {
+            height: 30px;
+            position: relative;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        body {
+            background: #8b0000;
+            /*opacity: 0.4;*/
+        }
+    </style>
+</head>
+<body>
+<h2>Welcome to MajiNotes</h2>
+<div class = "container" id = "loginScreen">
+    <div class = "center">
+        <button id = "login">Login with Google</button>
+    </div>
+</div>
+<div class = "container" id = "dashboard">
+    <div class = "center">
+        <button id = "logout">Logout</button>
+    </div>
+</div>
+<script type = 'module' src = "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script type = 'module' src = "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js"></script>
+<script type = 'module' src = "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+<script type = 'module' src = "index.js"></script>
+</body>
+</html>
